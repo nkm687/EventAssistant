@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EventAssistant</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body id="srjana">
+  <div id="banner">
+    <%= image_tag("logo.png") %>
+    <%= @page_title || "Srjana" %><!-- <label id="code.depot.e.title"/> -->
+  </div>
+  <div id="columns">
+    <div id="side">
+      <a href="">Home</a><br />
+      <%= link_to "Booths", booths_path %><br />
+      <a href="<%= url_for :controller => :Presenter, :action => :index %>">Participants</a><br />
+      <a href="<%= url_for :controller => :Demo, :action => :index %>">Demos</a><br />
+      <a href="<%= url_for :controller => :Settings, :action => :index %>">Send Message</a><br />
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+

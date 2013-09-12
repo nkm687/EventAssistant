@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @demo.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @demo.description %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%= @demo.keywords %>
+</p>
+
+<p>
+  <b>Avg user rating:</b>
+  <%= @demo.avg_user_rating %>
+</p>
+
+<p>
+  <b>Misc:</b>
+  <%= @demo.misc %>
+</p>
+
+
+<%= link_to 'Edit', edit_demo_path(@demo) %> |
+<%= link_to 'Back', demos_path %>

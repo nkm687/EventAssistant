@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  keywords: MyText
+  avg_user_rating: 1.5
+  misc: MyText
+
+two:
+  name: MyString
+  description: MyText
+  keywords: MyText
+  avg_user_rating: 1.5
+  misc: MyText
